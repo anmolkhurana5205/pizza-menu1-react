@@ -75,7 +75,17 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      {isPizzaAvailable ? <Pizzas /> : <p>Sorry no pizza available</p>}
+      {isPizzaAvailable ? (
+        <>
+          <p>
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from out stone oven, all organic, all delicious.
+          </p>
+          <Pizzas />
+        </>
+      ) : (
+        <p>Sorry no pizza available</p>
+      )}
     </main>
   );
 }
@@ -92,16 +102,16 @@ function Pizzas() {
 }
 
 function Pizza({ pizzaobj }) {
-  if (pizzaobj.soldOut) {
-    return null;
-  }
+  // if (pizzaobj.soldOut) {
+  //   return null;
+  // }
   return (
-    <li className="pizza">
+    <li className={`pizza ${pizzaobj.soldOut ? "sold-out" : ""}`}>
       <img src={pizzaobj.photoName} alt={pizzaobj.name} />
       <div>
         <h3>{pizzaobj.name}</h3>
         <p>{pizzaobj.ingredients}</p>
-        <span>{pizzaobj.price + 3}</span>
+        <span>{pizzaobj.soldOut ? "SOLD OUT" : pizzaobj.price + 3}</span>
       </div>
     </li>
   );

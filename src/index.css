@@ -79,6 +79,11 @@ body {
   align-items: center;
   gap: 4rem;
 }
+.menu > p {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 20px 20px;
+}
 
 .menu h2 {
   display: inline-block;
@@ -137,13 +142,13 @@ body {
   font-size: 1.6rem;
 }
 
-.pizza .sold-out {
+.pizza.sold-out {
   color: #888;
 }
 
 .pizza.sold-out img {
   filter: grayscale();
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* *************** */
