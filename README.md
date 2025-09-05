@@ -10,4 +10,4 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000] to view it in your browser.
-<img width="943" height="860" alt="Screenshot 2025-09-05 110524" src="https://github.com/user-attachments/assets/cf9086d5-3ec9-4e1c-b9f7-ede6203ff0be" />
+<img width="657" height="847" alt="Screenshot 2025-09-05 142516" src="https://github.com/user-attachments/assets/033886ac-edbf-49dc-be02-d73f547619b3" />
